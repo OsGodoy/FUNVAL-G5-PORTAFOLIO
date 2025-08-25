@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" id="todo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/MINIPROYECTO-1/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <title>PORTFOLIO1</title>
+</head>
+<body style="font-family: Gruppo, sans-serif;" >
+<main>
+    <div class="FONDO md:bg-none dark:md:bg-none border-2 h-screen w-screen bg-[url(/img/fondoImgOk-01.png)] dark:bg-[url(/img/fondoImgDarko-01.png)] bg-cover sm:bg-[length:650px] bg-center overflow-y-scroll snap-y snap-mandatory">
+        <div class="hidden md:flex dark:md:hidden">
+            <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+            <source src="/img/ojito.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="hidden dark:flex">
+            <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+            <source src="/img/darkModeFondo.mp4" type="video/mp4">
+            </video>
+        </div>
+        <label class="fixed right-[5%] sm:right-[3%] top-[2%] sm:top-[2%] inline-block h-8 w-14 cursor-pointer rounded-full bg-gray-400 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-rose-600 z-100">
+            <input class="peer sr-only" id="AcceptConditions" type="checkbox"/>
+                <span class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-gray-400 ring-[6px] ring-inset ring-gray-100 transition-all peer-checked:start-8 peer-checked:w-2 peer-checked:bg-gray-200 peer-checked:ring-transparent">
+                </span>
+        </label>
+        <div class="UNO h-screen w-screen flex items-center justify-center snap-center">
+            <section class="md:border-0 border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
+                <div class="md:border-0 border-1 border-gray-300 dark:border-neutral-800 h-[20%] w-70 sm:w-[95%] flex flex-col lg:flex-row lg:gap-4 items-center justify-center">
+                    <h1 class="text-indigo-700 dark:text-rose-600 font-bold text-2xl lg:text-4xl tracking-wide">
+                    SOY PEDRO GODOY
+                    </h1>
+                    <h2 class="text-indigo-700 dark:text-white dark:lg:text-neutral-950 lg:text-white w-full sm:w-75 lg:w-100 lg:border-0 lg:bg-indigo-700 dark:lg:bg-white font-bold text-lg lg:text-2xl tracking-wide border-2 rounded-full flex items-center justify-center">
+                    <em>PROGRAMADOR FULL STACK</em>
+                    </h2>
+                </div>
+                <div class="md:border-0 border-1 border-gray-300 dark:border-neutral-800 h-[20%] lg:h-[18%] w-70 sm:w-[95%] lg:w-[70%] flex items-center justify-center lg:grid lg:grid-cols-6 lg:place-items-center">
+                    <h2 class="transition duration-200 hover:cursor-pointer hover:scale-110 hover:bg-indigo-500 hidden dark:hover:bg-rose-400 lg:flex col-span-2 text-white dark:text-neutral-300 bg-indigo-700 dark:lg:bg-rose-600 h-8 w-[100%] sm:w-75 lg:w-50 font-bold text-xl lg:text-base tracking-widest rounded-full items-center justify-center gap-2">
+                    ¿QUIÉN SOY?
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    </h2>
+                    <h2 class="transition duration-200 hover:cursor-pointer hover:scale-110 hover:bg-indigo-500 dark:hover:bg-rose-400 text-white dark:text-neutral-300 lg:col-span-2 bg-indigo-700 dark:bg-rose-600 h-8 w-[100%] sm:w-75 lg:w-52 font-bold text-xl lg:text-base tracking-widest rounded-full flex items-center justify-center gap-2">
+                    MIS PROYECTOS
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                    </h2>
+                    <h2 class="transition duration-200 hover:cursor-pointer hover:scale-110 hover:bg-indigo-500 dark:hover:bg-rose-400 hidden lg:flex col-span-2 text-white dark:text-neutral-300 bg-indigo-700 dark:bg-rose-600 h-8 w-[100%] sm:w-75 lg:w-50 font-bold text-xl lg:text-base tracking-widest rounded-full items-center justify-center gap-2">
+                    HABILIDADES
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
+                    </svg>
+                    </h2>
+                    <h2 class="transition duration-200 hover:cursor-pointer hover:scale-110 hover:bg-indigo-500 hidden dark:hover:bg-rose-400 lg:flex col-span-2 col-start-2 text-white dark:text-neutral-300 bg-indigo-700 dark:bg-rose-600 h-8 w-[100%] sm:w-75 lg:w-52 font-bold text-xl lg:text-base tracking-widest rounded-full items-center justify-center gap-2">
+                    CONTÁCTAME
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                    </svg>
+                    </h2>
+                    <h2 class="transition duration-200 hover:cursor-pointer hover:scale-110 hover:bg-indigo-500 hidden dark:hover:bg-rose-400 lg:flex col-span-2 col-start-4 text-white dark:text-neutral-300 bg-indigo-700 dark:bg-rose-600 h-8 w-[100%] sm:w-75 lg:w-50 font-bold text-xl lg:text-base tracking-widest rounded-full items-center justify-center gap-2">
+                    REDES
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 lg:size-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                    </svg>
+                    </h2>
+                </div>
+            </section>
+        </div>
+        <div class="DOS xl:hidden bg-white dark:bg-neutral-950 md:bg-[url(/img/fondoImgOk-01.png)] md:bg-[length:400px] dark:md:bg-[url(/img/fondoImgDarko-01.png)] dark:md:bg-[length:400px] bg-contain bg-no-repeat bg-right h-screen w-screen flex flex-col items-center justify-center snap-center">
+            <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
+                <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-70 sm:w-[95%] flex flex-col items-center justify-center">
+                    <h2 class="text-indigo-700 dark:text-rose-600 w-full sm:w-75 font-bold text-xl tracking-wide border-2 rounded-full flex items-center justify-center">
+                    ¿QUIÉN SOY?
+                    </h2>
+                </div>
+                <div class="border-1 border-gray-300 dark:border-neutral-800 text-gray-600 dark:text-neutral-500 text-sm text-center p-2 w-70 sm:w-100 h-[50%] flex items-center justify-center backdrop-blur-md">
+                    <p class="whitespace-pre-line leading-tight" style="font-family:monospace;">
+                    Soy un desarrollador web Full Stack Junior con una base sólida en tecnologías tanto de frontend como de backend.
+                    
+                    Disfruto crear aplicaciones que combinan una buena experiencia visual con un funcionamiento eficiente.
+                    
+                    Me interesa especialmente la forma en que el desarrollo web permite unir creatividad y lógica. Por eso me esfuerzo en escribir código claro, reutilizable y bien estructurado
+                    
+                    Me gusta aprender nuevas tecnologías y adaptarme a distintos retos, lo que me ayuda a crecer constantemente como programador.
+                    
+                    </p>
+                </div>
+                <div class="border-1 border-gray-300 dark:border-neutral-800 h-[35%] w-70 sm:w-100 flex flex-col items-center justify-evenly backdrop-blur-md">
+                    <h2 class="text-white dark:text-neutral-300 bg-indigo-700 dark:bg-rose-600 h-[15%] w-[100%] sm:w-75 font-bold text-xl tracking-widest rounded-full flex items-center justify-center">
+                    HABILIDADES
+                    </h2>
+                    <div class="text-gray-600 dark:text-neutral-400 text-2xl font-bold flex items-center justify-center h-[75%] w-[95%]">
+                        <ul class="grid grid-cols-2 grid-rows-2 h-full w-full place-items-center gap-2">
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[60%]" src="/img/html-01.svg" alt="">
+                                <p class="flex items-center justify-center w-[40%]">50%</p>
+                            </li>
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[60%]" src="/img/css-01.svg" alt="">
+                                <p class="flex items-center justify-center w-[40%]">50%</p>
+                            </li>
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[60%]" src="/img/tail-01.svg" alt="">
+                                <p class="flex items-center justify-center w-[40%]">50%</p>
+                            </li>
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[60%]" src="/img/java-01.svg" alt="">
+                                <p class="flex items-center justify-center w-[40%]">10%</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="TRES xl:hidden bg-white dark:bg-neutral-950 md:bg-[url(/img/fondoImgOk-01.png)] md:bg-[length:400px] dark:md:bg-[url(/img/fondoImgDarko-01.png)] dark:md:bg-[length:400px] bg-contain bg-no-repeat bg-left-bottom h-screen w-screen flex flex-col items-center justify-center snap-center">
+            <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
+                <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-70 sm:w-[95%] flex flex-col items-center justify-center">
+                    <h2 class="text-rose-500 dark:text-teal-400 w-full sm:w-75 font-bold text-xl tracking-wide border-2 rounded-full flex items-center justify-center">
+                    MÁS SOBRE MÍ...
+                    </h2>
+                </div>
+                <div class="border-1 border-gray-300 dark:border-neutral-800 text-gray-600 dark:text-neutral-500 text-sm text-center p-2 w-70 sm:w-100 h-[50%] flex items-center justify-center backdrop-blur-md">
+                    <p class="whitespace-pre-line leading-tight" style="font-family:monospace;">
+                    Cuento con más de 10 años de experiencia en diseño gráfico y decidí dar un paso más.
+
+                    Descubrí el mundo del desarrollo web, un lugar donde no solo podía imaginar cómo debía verse algo, sino también construirlo, darle vida y movimiento a lo que antes quedaba solo en un lienzo.
+                    
+                    Mi objetivo es unir arte y código para transformar ideas en experiencias digitales que se sientan vivas.
+
+                    Con el diseño, aporto sensibilidad y estética, y gracias a la programación, tengo las herramientas para materializar esa visión en experiencias digitales completas.
+
+                    </p>
+                </div>
+                <div class="border-1 border-gray-300 dark:border-neutral-800 h-[35%] w-70 sm:w-100 flex flex-col items-center justify-evenly backdrop-blur-md">
+                    <h2 class="text-white dark:text-neutral-950 bg-rose-500 dark:bg-teal-400 h-[15%] w-[100%] sm:w-75 font-bold text-lg tracking-widest rounded-full flex items-center justify-center">
+                    <em>HABILIDADES EXTRAS</em>
+                    </h2>
+                    <div class="text-gray-600 dark:text-neutral-400 text-2xl font-bold flex items-center justify-center h-[75%] w-[95%]">
+                        <ul class="grid grid-cols-2 grid-rows-2 h-full w-full place-items-center gap-2">
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[60%]" src="/img/ai-01.svg" alt="">
+                                <p class="flex items-center justify-center w-[40%]">95%</p>
+                            </li>
+                            <li class="border-1 border-gray-300 dark:border-neutral-800  h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[60%]" src="/img/ps-01.svg" alt="">
+                                <p class="flex items-center justify-center w-[40%]">85%</p>
+                            </li>
+                            <li class="dark:hidden border-1 border-gray-300 h-full w-[50%] flex items-center justify-center p-1 col-span-2">
+                                <img class="animate-pulse w-[60%]" src="/img/cap-01.svg" alt="">
+                                <p class="flex items-center justify-center w-[40%]">90%</p>
+                            </li>
+                            <li class="hidden dark:flex  border-1 border-gray-300 dark:border-neutral-800 h-full w-[50%] items-center justify-center p-1 col-span-2">
+                                <img class="animate-pulse w-[60%]" src="/img/cap-02-01.svg" alt="">
+                                <p class="flex items-center justify-center w-[40%]">90%</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="hidden bg-white dark:bg-black xl:flex items-center justify-center h-screen w-screen bg-[url(/img/fondoImgOk-01.png)] bg-[length:650px] dark:bg-[url(/img/fondoImgDarko-01.png)] bg-center bg-no-repeat">
+            <div class="CUATRO h-screen w-screen flex flex-col items-center justify-center snap-center">
+                <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
+                    <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-120 flex flex-col items-center justify-center">
+                        <h2 class="text-indigo-700 dark:text-rose-600 w-75 font-bold text-2xl tracking-wide border-2 rounded-full flex items-center justify-center">
+                        ¿QUIÉN SOY?
+                        </h2>
+                    </div>
+                    <div class="border-1 border-gray-300 dark:border-neutral-800 text-gray-600 dark:text-neutral-500 text-lg text-center p-2 w-120 h-[50%] flex items-center justify-center backdrop-blur-md">
+                        <p class="whitespace-pre-line leading-tight" style="font-family:monospace;">
+                        Soy un desarrollador web Full Stack Junior con una base sólida en tecnologías tanto de frontend como de backend.
+                            
+                        Disfruto crear aplicaciones que combinan una buena experiencia visual con un funcionamiento eficiente.
+                            
+                        Me interesa especialmente la forma en que el desarrollo web permite unir creatividad y lógica. Por eso me esfuerzo en escribir código claro, reutilizable y bien estructurado
+                    
+                        Me gusta aprender nuevas tecnologías y adaptarme a distintos retos, lo que me ayuda a crecer constantemente como programador.
+                    
+                        </p>
+                    </div>
+                    <div class="border-1 border-gray-300 dark:border-neutral-800 h-[35%] w-120 flex flex-col items-center justify-evenly backdrop-blur-md">
+                        <h2 class="text-white dark:text-neutral-300 bg-indigo-700 dark:bg-rose-600 h-[15%] w-75 font-bold text-2xl tracking-widest rounded-full flex items-center justify-center">
+                        HABILIDADES
+                        </h2>
+                        <div class="text-gray-600 dark:text-neutral-400 text-2xl font-bold flex items-center justify-center h-[75%] w-[95%]">
+                            <ul class="grid grid-cols-2 grid-rows-2 h-full w-full place-items-center gap-2">
+                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="/img/html-01.svg" alt="">
+                                    <p class="flex items-center justify-center w-[40%]">50%</p>
+                                </li>
+                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="/img/css-01.svg" alt="">
+                                    <p class="flex items-center justify-center w-[40%]">50%</p>
+                                </li>
+                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="/img/tail-01.svg" alt="">
+                                    <p class="flex items-center justify-center w-[40%]">50%</p>
+                                </li>
+                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="/img/java-01.svg" alt="">
+                                    <p class="flex items-center justify-center w-[40%]">10%</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="CINCO h-screen w-screen flex flex-col items-center justify-center snap-center">
+                <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
+                    <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-120 flex flex-col items-center justify-center">
+                        <h2 class="text-rose-500 dark:text-teal-400 w-75 font-bold text-2xl tracking-wide border-2 rounded-full flex items-center justify-center">
+                        MÁS SOBRE MÍ...
+                        </h2>
+                    </div>
+                    <div class="border-1 border-gray-300 dark:border-neutral-800 text-gray-600 dark:text-neutral-500 text-lg text-center p-2 w-120 h-[50%] flex items-center justify-center backdrop-blur-md">
+                        <p class="whitespace-pre-line leading-tight" style="font-family:monospace;">
+                        Cuento con más de 10 años de experiencia en diseño gráfico y decidí dar un paso más.
+
+                        Descubrí el mundo del desarrollo web, un lugar donde no solo podía imaginar cómo debía verse algo, sino también construirlo, darle vida y movimiento a lo que antes quedaba solo en un lienzo.
+                    
+                        Mi objetivo es unir arte y código para transformar ideas en experiencias digitales que se sientan vivas.
+
+                        Con el diseño, aporto sensibilidad y estética, y gracias a la programación, tengo las herramientas para materializar esa visión en experiencias digitales completas.
+
+                        </p>
+                    </div>
+                    <div class="border-1 border-gray-300 dark:border-neutral-800 h-[35%] w-120 flex flex-col items-center justify-evenly backdrop-blur-md">
+                        <h2 class="text-white dark:text-neutral-950 bg-rose-500 dark:bg-teal-400 h-[15%] w-90 font-bold text-2xl tracking-widest rounded-full flex items-center justify-center">
+                        <em>HABILIDADES EXTRAS</em>
+                        </h2>
+                        <div class="text-gray-600 dark:text-neutral-400 text-2xl font-bold flex items-center justify-center h-[75%] w-[95%]">
+                            <ul class="grid grid-cols-2 grid-rows-2 h-full w-full place-items-center gap-2">
+                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="/img/ai-01.svg" alt="">
+                                    <p class="flex items-center justify-center w-[40%]">95%</p>
+                                </li>
+                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="/img/ps-01.svg" alt="">
+                                    <p class="flex items-center justify-center w-[40%]">85%</p>
+                                </li>
+                                <li class="dark:hidden border-1 border-gray-300 h-full w-[50%] flex items-center justify-center p-1 col-span-2">
+                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="/img/cap-01.svg" alt="">
+                                    <p class="flex items-center justify-center w-[40%]">90%</p>
+                                </li>
+                                <li class="hidden dark:flex border-1 border-neutral-800 h-full w-[50%] items-center justify-center p-1 col-span-2">
+                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="/img/cap-02-01.svg" alt="">
+                                    <p class="flex items-center justify-center w-[40%]">90%</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="SEIS bg-white dark:bg-neutral-950 h-screen w-screen flex flex-col items-center justify-center snap-center">
+            <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
+                <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-70 sm:w-[95%] flex flex-col items-center justify-center">
+                    <h2 class="text-white bg-slate-500 dark:bg-slate-700 h-[50%] w-full sm:w-75 font-bold text-xl tracking-wide rounded-full flex items-center justify-center">
+                    CONTÁCTAME
+                    </h2>
+                </div>
+                <div class="border-1 border-gray-300 dark:border-neutral-800 bg-slate-500 dark:bg-slate-700 text-lg font-bold px-2 w-70 sm:w-100 h-[50%] flex items-center justify-center">
+                    <form class="h-[95%] w-[95%] flex flex-col items-center justify-evenly" action="">
+                        <div class="h-[20%] w-full flex flex-col items-start justify-center">
+                            <label class="text-white" for="nombre">Nombre</label>
+                            <input class="focus:ring-3 invalid:border-rose-600 invalid:text-rose-600 focus:ring-sky-400 focus:outline focus:outline-sky-400 focus:invalid:ring-rose-600 focus:invalid:outline-rose-600 text-slate-500 bg-white w-full rounded-full px-2" type="text" placeholder="Pedro">
+                        </div>
+                        <div class="h-[20%] w-full flex flex-col items-start justify-center">
+                            <label class="text-white" for="mail">Correo</label>
+                            <input class="focus:ring-3 invalid:border-rose-600 invalid:text-rose-600 focus:ring-sky-400 focus:outline focus:outline-sky-400 focus:invalid:ring-rose-600 focus:invalid:outline-rose-600 text-slate-500 bg-white w-full rounded-full px-2" type="email" placeholder="pedro@gmail.com">
+                        </div>
+                        <div class="h-[40%] w-full flex flex-col items-start justify-center">
+                            <label class="text-white" for="mensaje">Mensaje</label>
+                            <input class="focus:outline-none text-slate-500 bg-white h-[80%] w-full rounded-lg px-2" type="text">
+                        </div>
+                        <div class="h-[10%] w-full flex items-center justify-center">
+                            <button class="text-white bg-sky-500 transition duration-200 hover:cursor-pointer hover:scale-105 hover:bg-sky-400 dark:bg-indigo-500 dark:hover:bg-indigo-400 w-[50%] rounded-full">
+                            Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="border-1 border-gray-300 dark:border-neutral-800 h-[35%] w-70 sm:w-100 flex flex-col items-center justify-evenly">
+                    <h2 class="text-white dark:text-neutral-950 bg-purple-800 dark:bg-amber-500 h-[15%] w-[100%] sm:w-75 font-bold text-xl tracking-widest rounded-full flex items-center justify-center">
+                    MIS REDES
+                    </h2>
+                    <div class="text-gray-600 text-2xl font-bold flex items-center justify-center h-[75%] w-[95%]">
+                        <ul class="grid grid-cols-2 grid-rows-2 h-full w-full place-items-center gap-2">
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[30%]" src="/img/face-02-01.svg" alt="">
+                            </li>
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[30%]" src="/img/insta-02-01.svg" alt="">
+                            </li>
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[30%]" src="/img/be-02-01.svg" alt="">
+                            </li>
+                            <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
+                                <img class="animate-pulse w-[30%]" src="/img/lin-02-01-01.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+<script>
+        let todo= document.querySelector("#todo");
+        let boton= document.querySelector("#AcceptConditions");
+        boton.addEventListener("click",function() {
+            todo.classList.toggle("dark");
+        });
+    </script>
+</body>
+</html>
