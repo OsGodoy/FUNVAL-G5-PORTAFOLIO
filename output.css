@@ -538,6 +538,9 @@
     --tw-tracking: var(--tracking-widest);
     letter-spacing: var(--tracking-widest);
   }
+  .whitespace-normal {
+    white-space: normal;
+  }
   .whitespace-nowrap {
     white-space: nowrap;
   }
@@ -767,6 +770,11 @@
       line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
+  .sm\:whitespace-pre-line {
+    @media (width >= 40rem) {
+      white-space: pre-line;
+    }
+  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -791,6 +799,17 @@
   .md\:bg-\[length\:400px\] {
     @media (width >= 48rem) {
       background-size: 400px;
+    }
+  }
+  .md\:text-sm {
+    @media (width >= 48rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
+    }
+  }
+  .md\:whitespace-pre-line {
+    @media (width >= 48rem) {
+      white-space: pre-line;
     }
   }
   .lg\:col-span-2 {
