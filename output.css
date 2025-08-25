@@ -459,11 +459,11 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(\.\/img\/fondoImgOk-01\.png\)\] {
-    background-image: url(./img/fondoImgOk-01.png);
+  .bg-\[url\(img\/fondoImgOk-01\.png\)\] {
+    background-image: url(img/fondoImgOk-01.png);
   }
-  .bg-\[url\(\/img\/fondoImgOk-01\.png\)\] {
-    background-image: url(/img/fondoImgOk-01.png);
+  .bg-\[url\(img\/fondoimgojito-01\.png\)\] {
+    background-image: url(img/fondoimgojito-01.png);
   }
   .bg-\[length\:650px\] {
     background-size: 650px;
@@ -756,9 +756,14 @@
       border-width: 0px;
     }
   }
-  .md\:bg-\[url\(\/img\/fondoImgOk-01\.png\)\] {
+  .md\:bg-\[url\(img\/fondoImgOk-01\.png\)\] {
     @media (width >= 48rem) {
-      background-image: url(/img/fondoImgOk-01.png);
+      background-image: url(img/fondoImgOk-01.png);
+    }
+  }
+  .md\:bg-\[url\(img\/fondoimgojito-01\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(img/fondoimgojito-01.png);
     }
   }
   .md\:bg-none {
@@ -936,9 +941,19 @@
       background-color: var(--color-teal-400);
     }
   }
-  .dark\:bg-\[url\(\/img\/fondoImgDarko-01\.png\)\] {
+  .dark\:bg-\[url\(img\/fondoImgDarko-01\.png\)\] {
     &:where(.dark, .dark *) {
-      background-image: url(/img/fondoImgDarko-01.png);
+      background-image: url(img/fondoImgDarko-01.png);
+    }
+  }
+  .dark\:bg-\[url\(img\/fondoimgdarko-01\.png\)\] {
+    &:where(.dark, .dark *) {
+      background-image: url(img/fondoimgdarko-01.png);
+    }
+  }
+  .dark\:bg-\[url\(img\/fondoimgojitodarko-01\.png\)\] {
+    &:where(.dark, .dark *) {
+      background-image: url(img/fondoimgojitodarko-01.png);
     }
   }
   .dark\:text-neutral-300 {
@@ -1001,10 +1016,17 @@
       }
     }
   }
-  .dark\:md\:bg-\[url\(\/img\/fondoImgDarko-01\.png\)\] {
+  .dark\:md\:bg-\[url\(img\/fondoImgDarko-01\.png\)\] {
     &:where(.dark, .dark *) {
       @media (width >= 48rem) {
-        background-image: url(/img/fondoImgDarko-01.png);
+        background-image: url(img/fondoImgDarko-01.png);
+      }
+    }
+  }
+  .dark\:md\:bg-\[url\(img\/fondoimgojitodarko-01\.png\)\] {
+    &:where(.dark, .dark *) {
+      @media (width >= 48rem) {
+        background-image: url(img/fondoimgojitodarko-01.png);
       }
     }
   }
