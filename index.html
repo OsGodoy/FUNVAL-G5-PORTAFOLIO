@@ -11,23 +11,23 @@
 </head>
 <body style="font-family: Gruppo, sans-serif;" >
 <main>
-    <div class="FONDO md:bg-none dark:md:bg-none h-screen w-screen bg-[url(img/fondoimgojito-01.png)] dark:bg-black md:dark:bg-black/0 dark:bg-[url(img/fondodark25-01.png)] bg-[length:450px] bg-no-repeat sm:bg-[length:650px] bg-center overflow-y-scroll snap-y snap-mandatory">
+    <div class="FONDO md:bg-none dark:md:bg-none h-screen w-screen bg-[url(img/fondoimgojito-01.png)] dark:bg-black md:dark:bg-black/0 dark:bg-[url(img/fondodark25-01.png)] bg-[length:450px] bg-no-repeat sm:bg-[length:650px] bg-center overflow-y-auto snap-y snap-mandatory">
         <div class="hidden md:flex dark:md:hidden">
-            <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+            <video autoplay muted loop playsinline class="absolute w-full h-full object-cover -z-10">
             <source src="img/videoLight25.mp4" type="video/mp4">
             </video>
         </div>
         <div class="hidden md:dark:flex">
-            <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover -z-10">
+            <video autoplay muted loop playsinline class="absolute w-full h-full object-cover -z-10">
             <source src="img/videoDark25.mp4" type="video/mp4">
             </video>
         </div>
-        <label class="fixed right-[5%] sm:right-[3%] top-[2%] sm:top-[2%] inline-block h-8 w-14 cursor-pointer rounded-full bg-gray-400 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-gray-400 z-100">
+        <label class="fixed right-[5%] sm:right-[3%] top-[2%] sm:top-[2%] inline-block h-8 w-14 cursor-pointer rounded-full bg-gray-400 transition [-webkit-tap-highlight-color:_transparent] has-[:checked]:bg-gray-400 z-50">
             <input class="peer sr-only" id="AcceptConditions" type="checkbox"/>
                 <span class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-indigo-700 ring-[6px] ring-inset ring-gray-100 transition-all peer-checked:start-8 peer-checked:w-2 peer-checked:bg-gray-100 peer-checked:ring-transparent">
                 </span>
         </label>
-        <div class="UNO h-screen w-screen flex items-center justify-center snap-center">
+        <div class="UNO h-screen w-full flex items-center justify-center snap-center">
             <section class="md:border-0 border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between lg:justify-around lg:gap-140">
                 <div class="md:border-0 border-1 border-gray-300 dark:border-neutral-800 h-[20%] w-70 sm:w-[95%] flex flex-col lg:flex-row lg:gap-4 items-center justify-center lg:items-end md:justify-end lg:justify-center">
                     <h1 class="text-indigo-700 dark:text-teal-400 font-bold text-2xl lg:text-4xl tracking-wide">
@@ -72,7 +72,7 @@
                 </div>
             </section>
         </div>
-        <div class="DOS xl:hidden bg-white dark:bg-neutral-950 md:bg-[url(img/fondoimgojito-01.png)] md:bg-[length:400px] dark:md:bg-[url(img/fondodark25-01.png)] dark:md:bg-[length:400px] bg-contain bg-no-repeat bg-right h-screen w-screen flex flex-col items-center justify-center snap-center">
+        <div class="DOS xl:hidden bg-white dark:bg-neutral-950 md:bg-[url(img/fondoimgojito-01.png)] md:bg-[length:400px] dark:md:bg-[url(img/fondodark25-01.png)] dark:md:bg-[length:400px] bg-contain bg-no-repeat bg-right h-screen w-full flex flex-col items-center justify-center snap-center">
             <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
                 <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-70 sm:w-[95%] flex flex-col items-center justify-center">
                     <h2 class="text-indigo-700 dark:text-teal-400 w-full sm:w-75 font-bold text-xl tracking-wide border-2 rounded-full flex items-center justify-center">
@@ -118,7 +118,7 @@
                 </div>
             </section>
         </div>
-        <div class="TRES xl:hidden bg-white dark:bg-neutral-950 md:bg-[url(img/fondoimgojito-01.png)] md:bg-[length:400px] dark:md:bg-[url(img/fondodark25-01.png)] dark:md:bg-[length:400px] bg-contain bg-no-repeat bg-left-bottom h-screen w-screen flex flex-col items-center justify-center snap-center">
+        <div class="TRES xl:hidden bg-white dark:bg-neutral-950 md:bg-[url(img/fondoimgojito-01.png)] md:bg-[length:400px] dark:md:bg-[url(img/fondodark25-01.png)] dark:md:bg-[length:400px] bg-contain bg-no-repeat bg-left-bottom h-screen w-full flex flex-col items-center justify-center snap-center">
             <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
                 <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-70 sm:w-[95%] flex flex-col items-center justify-center">
                     <h2 class="text-indigo-700 dark:text-teal-400 w-full sm:w-75 font-bold text-xl tracking-wide border-2 rounded-full flex items-center justify-center">
@@ -164,7 +164,7 @@
                 </div>
             </section>
         </div>
-        <div class="hidden bg-white dark:bg-black xl:flex items-center justify-center h-screen w-screen bg-[url(img/fondoimgojito-01.png)] bg-[length:650px] dark:bg-[url(img/fondodark25-01.png)] bg-center bg-no-repeat">
+        <div class="hidden bg-white dark:bg-black xl:flex items-center justify-center h-screen w-full bg-[url(img/fondoimgojito-01.png)] bg-[length:650px] dark:bg-[url(img/fondodark25-01.png)] bg-center bg-no-repeat">
             <div class="CUATRO h-screen w-screen flex flex-col items-center justify-center snap-center">
                 <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
                     <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-120 flex flex-col items-center justify-center">
@@ -258,8 +258,8 @@
                 </section>
             </div>
         </div>
-        <div class="SEIS bg-white dark:bg-neutral-950 h-screen w-screen flex flex-col items-center justify-center snap-center">
-            <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
+        <div class="SEIS bg-white dark:bg-neutral-950 h-screen w-full flex flex-col items-center justify-center snap-center">
+            <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[98%] flex flex-col items-center justify-between">
                 <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-70 sm:w-[95%] flex flex-col items-center justify-center">
                     <h2 class="text-white bg-slate-500 dark:bg-slate-700 h-[50%] w-full sm:w-75 font-bold text-xl tracking-wide rounded-full flex items-center justify-center">
                     CONTÁCTAME
