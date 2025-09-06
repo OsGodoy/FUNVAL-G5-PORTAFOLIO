@@ -34,11 +34,13 @@ back.addEventListener("click",function(){
 })
 
 cerrar.addEventListener("click",function(){
-    if(windoWho.classList.contains("fixed") || windowSkills.classList.contains("fixed")){
+    if(cerrar.classList.contains("absolute")){
         windoWho.classList.replace("fixed","hidden")
         windowSkills.classList.replace("fixed","hidden")
+        windowProyect.classList.replace("fixed","hidden")
         who.classList.replace("xl:scale-110","xl:scale-100")
         skills.classList.replace("xl:scale-110","xl:scale-100")
+        proyects.classList.replace("xl:scale-110","xl:scale-100")
         who2.classList.replace("flex","hidden")
         whoText2.classList.replace("flex","hidden")
         botonFondo.classList.replace("bg-left-bottom","bg-right-top")
@@ -50,7 +52,6 @@ cerrar.addEventListener("click",function(){
 // QUIEN SOY? --------------------------------------------------------------
 
 let who = document.querySelector("#who")
-
 let windoWho = document.querySelector("#windoWho")
 let who1 = document.querySelector("#who1")
 let whoText1 = document.querySelector("#whoText1")
@@ -59,19 +60,19 @@ let who2 = document.querySelector("#who2")
 
 who.addEventListener("click",function(){
     if(who.classList.contains("xl:scale-100")){
-        who.classList.replace("xl:scale-100","xl:scale-110")
         windoWho.classList.replace("hidden","fixed")
+        who.classList.replace("xl:scale-100","xl:scale-110")
         who1.classList.replace("hidden","flex")
         whoText1.classList.replace("hidden","flex")
         botones.classList.replace("hidden","absolute")
-        abrir.classList.replace("hidden","absolute")
+        abrir.classList.replace("hidden","absolute")        
     }
 })
+
 
 // HABILIDADES --------------------------------------------------------------
 
 let skills = document.querySelector("#skills")
-let fondoSkills = document.querySelector("#fondoSkills")
 let windowSkills = document.querySelector("#windowSkills")
 
 skills.addEventListener("click",function(){
@@ -83,3 +84,16 @@ skills.addEventListener("click",function(){
     }
 })
 
+// PROYECTOS --------------------------------------------------------------
+
+let proyects = document.querySelector("#proyects")
+let windowProyect = document.querySelector("#windowProyect")
+
+proyects.addEventListener("click",function(){
+    if(proyects.classList.contains("xl:scale-100")){
+        proyects.classList.replace("xl:scale-100","xl:scale-110")
+        windowProyect.classList.replace("hidden","fixed")
+        botones.classList.replace("hidden","absolute")
+        abrir.classList.replace("absolute","hidden")
+    }
+})
