@@ -4,7 +4,9 @@ let botones = document.querySelector("#botones")
 let cerrar = document.querySelector(".cerrar")
 let abrir = document.querySelector(".abrir")
 let back = document.querySelector(".back")
-let botonFondo = document.querySelector("#botonFondo")
+let fondoProyect = document.querySelector("#fondoProyect")
+let fondoSkills = document.querySelector("#fondoSkills")
+let fondoWho = document.querySelector("#fondoWho")
 
 // FUNCIONALIDAD DE LOS BOTONES
 
@@ -16,7 +18,8 @@ abrir.addEventListener("click",function(){
         whoText1.classList.replace("flex","hidden")
         who2.classList.replace("hidden","flex")
         whoText2.classList.replace("hidden","flex")
-        botonFondo.classList.replace("bg-right-top","bg-left-bottom")
+        fondoProyect.classList.replace("bg-right-top","bg-left-bottom")
+        fondoWho.classList.replace("bg-right-top","bg-left-bottom")
     }
 })
 
@@ -29,7 +32,7 @@ back.addEventListener("click",function(){
         whoText1.classList.replace("hidden","flex")
         who2.classList.replace("flex","hidden")
         whoText2.classList.replace("flex","hidden")
-        botonFondo.classList.replace("bg-left-bottom","bg-right-top")
+        fondoWho.classList.replace("bg-left-bottom","bg-right-top")
     }
 })
 
@@ -43,11 +46,15 @@ cerrar.addEventListener("click",function(){
         proyects.classList.replace("xl:scale-110","xl:scale-100")
         who2.classList.replace("flex","hidden")
         whoText2.classList.replace("flex","hidden")
-        botonFondo.classList.replace("bg-left-bottom","bg-right-top")
+        fondoProyect.classList.replace("bg-left-bottom","bg-right-top")
         botones.classList.replace("absolute","hidden")
         back.classList.replace("absolute","hidden")
+        fondoWho.classList.replace("bg-left-bottom","bg-right-top")
+        contact.classList.replace("xl:scale-110","xl:scale-100")
+        windowContact.classList.replace("fixed","hidden")
     }
 })
+
 
 // QUIEN SOY? --------------------------------------------------------------
 
@@ -84,6 +91,7 @@ skills.addEventListener("click",function(){
     }
 })
 
+
 // PROYECTOS --------------------------------------------------------------
 
 let proyects = document.querySelector("#proyects")
@@ -93,6 +101,22 @@ proyects.addEventListener("click",function(){
     if(proyects.classList.contains("xl:scale-100")){
         proyects.classList.replace("xl:scale-100","xl:scale-110")
         windowProyect.classList.replace("hidden","fixed")
+        botones.classList.replace("hidden","absolute")
+        abrir.classList.replace("absolute","hidden")
+    }
+})
+
+
+// CONTACTAME --------------------------------------------------------------
+
+let contact = document.querySelector("#contact")
+let windowContact = document.querySelector("#windowContact")
+let fondoContact = document.querySelector("#fondoContact")
+
+contact.addEventListener("click",function(){
+    if(contact.classList.contains("xl:scale-100")){
+        contact.classList.replace("xl:scale-100","xl:scale-110")
+        windowContact.classList.replace("hidden","fixed")
         botones.classList.replace("hidden","absolute")
         abrir.classList.replace("absolute","hidden")
     }
