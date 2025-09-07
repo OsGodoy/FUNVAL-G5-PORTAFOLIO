@@ -52,6 +52,8 @@ cerrar.addEventListener("click",function(){
         fondoWho.classList.replace("bg-left-bottom","bg-right-top")
         contact.classList.replace("xl:scale-110","xl:scale-100")
         windowContact.classList.replace("fixed","hidden")
+        redes.classList.replace("xl:scale-110","xl:scale-100")
+        windowRedes.classList.replace("fixed","hidden")
     }
 })
 
@@ -117,6 +119,21 @@ contact.addEventListener("click",function(){
     if(contact.classList.contains("xl:scale-100")){
         contact.classList.replace("xl:scale-100","xl:scale-110")
         windowContact.classList.replace("hidden","fixed")
+        botones.classList.replace("hidden","absolute")
+        abrir.classList.replace("absolute","hidden")
+    }
+})
+
+
+// REDES --------------------------------------------------------------
+
+let redes = document.querySelector("#redes")
+let windowRedes = document.querySelector("#windowRedes")
+
+redes.addEventListener("click",function(){
+    if(redes.classList.contains("xl:scale-100")){
+        redes.classList.replace("xl:scale-100","xl:scale-110")
+        windowRedes.classList.replace("hidden","fixed")
         botones.classList.replace("hidden","absolute")
         abrir.classList.replace("absolute","hidden")
     }
