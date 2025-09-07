@@ -187,9 +187,9 @@
             <div id="windowProyect" class="hidden bg-gray-800/70 dark:bg-gray-700/90 rounded-lg backdrop-blur-2xl h-[90%] w-[60%]">
                 <section id="fondoProyect" class="h-full w-full flex flex-col items-center justify-center gap-5 bg-[url(img/fondoblanco25-01.png)] bg-[length:400px] bg-no-repeat bg-right-top">
                     <div class="border-1 border-white text-white h-[10%] w-70 sm:w-[95%] xl:w-[50%] flex flex-col items-center justify-center">
-                        <button class="bg-emerald-500 text-emerald-50 font-semibold w-full sm:w-75 xl:h-[50%] xl:text-2xl text-xl tracking-wide rounded-full flex items-center justify-center gap-4 transition duration-200 hover:cursor-pointer hover:scale-110">
+                        <button class="flex items-center justify-center bg-emerald-500 text-emerald-50 font-semibold w-78 h-[50%] text-2xl tracking-wide rounded-full gap-4 transition duration-200 hover:cursor-pointer hover:scale-110">
                             MIS PROYECTOS
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <svg class="size-6 animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                             </svg>
                         </button>
@@ -205,17 +205,33 @@
             <div id="windowContact" class="hidden bg-gray-800/70 dark:bg-gray-700/90 rounded-lg backdrop-blur-2xl h-[90%] w-[60%]">
                 <section id="fondoContact" class="h-full w-full flex flex-col items-center justify-center gap-5 bg-[url(img/fondoblanco25-01.png)] bg-[length:400px] bg-no-repeat bg-right-top">
                     <div class="border-1 border-white text-white h-[10%] w-70 sm:w-[95%] xl:w-[50%] flex flex-col items-center justify-center">
-                        <button class="bg-emerald-500 text-emerald-50 font-semibold w-full sm:w-75 xl:h-[50%] xl:text-2xl text-xl tracking-wide rounded-full flex items-center justify-center gap-4 transition duration-200 hover:cursor-pointer hover:scale-110">
-                            MIS PROYECTOS
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                            </svg>
-                        </button>
+                        <h2 class="border-2 border-white h-[50%] w-75 font-medium text-2xl tracking-wide rounded-full flex items-center justify-center gap-4">
+                        CONTÁCTAME
+                        <svg class="size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                        </svg>
+                        </h2>
                     </div>
-                    <div class="border-1 border-white text-white text-s md:text-sm text-center p-2 w-70 sm:w-120 h-[50%] xl:h-[50%] xl:w-[50%] xl:text-xl flex xl:p-6 items-center justify-center">
-                        <img class="h-80 fixed top-100" src="img/worksOk.png" alt="">
-                        <p class="whitespace-normal leading-tight flex items-center justify-center h-[80%]" style="font-family:monospace;">
-                        </p>
+                    <div class="border-1 border-white text-white text-center h-[50%] w-[50%] text-2xl flex items-center justify-center">
+                        <form class="h-full w-[60%] flex flex-col items-center justify-evenly" action="">
+                            <div class="h-[20%] w-full flex flex-col items-start justify-center">
+                                <label class="text-white" for="nombre">Nombre</label>
+                                <input class="focus:ring-3 invalid:border-rose-600 invalid:text-rose-600 focus:ring-sky-400 focus:outline focus:outline-sky-400 focus:invalid:ring-rose-600 focus:invalid:outline-rose-600 text-slate-500 bg-white w-full rounded-full px-2" type="text" placeholder="Pedro">
+                            </div>
+                            <div class="h-[20%] w-full flex flex-col items-start justify-center">
+                                <label class="text-white" for="mail">Correo</label>
+                                <input class="focus:ring-3 invalid:border-rose-600 invalid:text-rose-600 focus:ring-sky-400 focus:outline focus:outline-sky-400 focus:invalid:ring-rose-600 focus:invalid:outline-rose-600 text-slate-500 bg-white w-full rounded-full px-2" type="email" placeholder="pedro@gmail.com">
+                            </div>
+                            <div class="h-[40%] w-full flex flex-col items-start justify-center">
+                                <label class="text-white" for="mensaje">Mensaje</label>
+                                <textarea class="focus:outline-none text-slate-500 bg-white h-[80%] w-full rounded-lg px-2" placeholder="Escribe tu mensaje..."></textarea>
+                            </div>
+                            <div class="h-[20%] w-full flex items-center justify-center">
+                                <button class="text-gray-700 bg-emerald-500 font-semibold transition duration-200 hover:cursor-pointer hover:scale-105 hover:bg-emerald-400 dark:bg-indigo-500 dark:hover:bg-indigo-400 w-[50%] rounded-full">
+                                Enviar
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </section>
             </div>
@@ -338,101 +354,8 @@
                 </div>
             </section>
         </div>
-        <div class="hidden bg-white dark:bg-black xl:flex items-center justify-center h-screen w-full bg-[url(img/fondoimgojito-01.png)] bg-[length:650px] dark:bg-[url(img/fondodark25-01.png)] bg-center bg-no-repeat">
-            <div class="CUATRO h-screen w-screen flex flex-col items-center justify-center snap-center">
-                <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
-                    <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-120 flex flex-col items-center justify-center">
-                        <h2 class="text-indigo-700 dark:text-teal-400 w-75 font-bold text-2xl tracking-wide border-2 rounded-full flex items-center justify-center">
-                        ¿QUIÉN SOY?
-                        </h2>
-                    </div>
-                    <div class="border-1 border-gray-300 dark:border-neutral-800 text-gray-600 dark:text-neutral-500 text-lg text-center p-2 w-120 h-[50%] flex items-center justify-center backdrop-blur-md">
-                        <p class="whitespace-pre-line leading-tight" style="font-family:monospace;">
-                        Soy un desarrollador web Full Stack Junior con una base sólida en tecnologías tanto de frontend como de backend.
-                            
-                        Disfruto crear aplicaciones que combinan una buena experiencia visual con un funcionamiento eficiente.
-                            
-                        Me interesa especialmente la forma en que el desarrollo web permite unir creatividad y lógica. Por eso me esfuerzo en escribir código claro, reutilizable y bien estructurado
-                    
-                        Me gusta aprender nuevas tecnologías y adaptarme a distintos retos, lo que me ayuda a crecer constantemente como programador.
-                    
-                        </p>
-                    </div>
-                    <div class="border-1 border-gray-300 dark:border-neutral-800 h-[35%] w-120 flex flex-col items-center justify-evenly backdrop-blur-md">
-                        <h2 class="text-white dark:text-black bg-indigo-700 dark:bg-teal-400 h-[15%] w-75 font-bold text-2xl tracking-widest rounded-full flex items-center justify-center">
-                        HABILIDADES
-                        </h2>
-                        <div class="text-gray-600 dark:text-neutral-400 text-2xl font-bold flex items-center justify-center h-[75%] w-[95%]">
-                            <ul class="grid grid-cols-2 grid-rows-2 h-full w-full place-items-center gap-2">
-                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
-                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="img/html-01.svg" alt="">
-                                    <p class="flex items-center justify-center w-[40%] text-lg">html</p>
-                                </li>
-                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
-                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="img/css-01.svg" alt="">
-                                    <p class="flex items-center justify-center w-[40%] text-lg">css</p>
-                                </li>
-                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
-                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="img/tail-01.svg" alt="">
-                                    <p class="flex items-center justify-center w-[40%] text-lg">tailwind</p>
-                                </li>
-                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
-                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="img/java-01.svg" alt="">
-                                    <p class="flex items-center justify-center w-[40%] text-lg">javascript</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-            <div class="CINCO h-screen w-screen flex flex-col items-center justify-center snap-center">
-                <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[95%] flex flex-col items-center justify-between">
-                    <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-120 flex flex-col items-center justify-center">
-                        <h2 class="text-indigo-700 dark:text-teal-400 w-75 font-bold text-2xl tracking-wide border-2 rounded-full flex items-center justify-center">
-                        MÁS SOBRE MÍ...
-                        </h2>
-                    </div>
-                    <div class="border-1 border-gray-300 dark:border-neutral-800 text-gray-600 dark:text-neutral-500 text-lg text-center p-2 w-120 h-[50%] flex items-center justify-center backdrop-blur-md">
-                        <p class="whitespace-pre-line leading-tight" style="font-family:monospace;">
-                        Cuento con más de 10 años de experiencia en diseño gráfico y decidí dar un paso más.
-
-                        Descubrí el mundo del desarrollo web, un lugar donde no solo podía imaginar cómo debía verse algo, sino también construirlo, darle vida y movimiento a lo que antes quedaba solo en un lienzo.
-                    
-                        Mi objetivo es unir arte y código para transformar ideas en experiencias digitales que se sientan vivas.
-
-                        Con el diseño, aporto sensibilidad y estética, y gracias a la programación, tengo las herramientas para materializar esa visión en experiencias digitales completas.
-
-                        </p>
-                    </div>
-                    <div class="border-1 border-gray-300 dark:border-neutral-800 h-[35%] w-120 flex flex-col items-center justify-evenly backdrop-blur-md">
-                        <h2 class="text-white dark:text-neutral-950 bg-indigo-700 dark:bg-teal-400 h-[15%] w-90 font-bold text-2xl tracking-widest rounded-full flex items-center justify-center">
-                        <em>HABILIDADES EXTRAS</em>
-                        </h2>
-                        <div class="text-gray-600 dark:text-neutral-400 text-2xl font-bold flex items-center justify-center h-[75%] w-[95%]">
-                            <ul class="grid grid-cols-2 grid-rows-2 h-full w-full place-items-center gap-2">
-                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1">
-                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="img/ai-01.svg" alt="">
-                                    <p class="flex items-center justify-center w-[40%] text-lg">illustrator</p>
-                                </li>
-                                <li class="border-1 border-gray-300 dark:border-neutral-800 h-full w-[95%] flex items-center justify-center p-1 gap-2">
-                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="img/ps-01.svg" alt="">
-                                    <p class="flex items-center justify-center w-[40%] text-lg">photoshop</p>
-                                </li>
-                                <li class="dark:hidden border-1 border-gray-300 h-full w-[50%] flex items-center justify-center p-1 col-span-2">
-                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="img/cap-01.svg" alt="">
-                                    <p class="flex items-center justify-center w-[40%] text-lg">capcut</p>
-                                </li>
-                                <li class="hidden dark:flex border-1 border-neutral-800 h-full w-[50%] items-center justify-center p-1 col-span-2">
-                                    <img class="animate-pulse w-[60%] lg:w-[40%]" src="img/cap-02-01.svg" alt="">
-                                    <p class="flex items-center justify-center w-[40%] text-lg">capcut</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <div class="SEIS bg-white dark:bg-neutral-950 h-screen w-full flex flex-col items-center justify-center snap-center">
+        
+        <div class="SEIS xl:hidden bg-white dark:bg-neutral-950 h-screen w-full flex flex-col items-center justify-center snap-center">
             <section class="border-1 border-gray-300 dark:border-neutral-800 py-4 h-[96%] w-[98%] flex flex-col items-center justify-between">
                 <div class="border-1 border-gray-300 dark:border-neutral-800 h-[10%] w-70 sm:w-[95%] flex flex-col items-center justify-center">
                     <h2 class="text-white bg-slate-500 dark:bg-slate-700 h-[50%] w-full sm:w-75 font-bold text-xl tracking-wide rounded-full flex items-center justify-center">
