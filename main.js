@@ -62,19 +62,20 @@ cerrar.addEventListener("click",function(){
 
 let toggle = document.querySelector(".toggle")
 let toggleFx = document.querySelector(".toggleFx")
-let windoToggle = document.querySelector("#windoToggle")
+let windowToggle = document.querySelector("#windowToggle")
+let cerrarToggle = document.querySelector("#cerrarToggle")
 
 toggle.addEventListener("click",function(){
     if(toggle.classList.contains("fixed")){
         toggle.classList.replace("fixed","hidden")
         toggleFx.classList.replace("fixed","hidden")
-        windoToggle.classList.toggle("translate-x-full")
+        windowToggle.classList.toggle("translate-x-full")
     }
 })
 
-cerrar.addEventListener("click",function(){
-    if(windoToggle.classList.contains("flex")){
-        windoToggle.classList.toggle("translate-x-full")
+cerrarToggle.addEventListener("click",function(){
+    if(windowToggle.classList.contains("flex")){
+        windowToggle.classList.toggle("translate-x-full")
         toggle.classList.replace("hidden","fixed")
         toggleFx.classList.replace("hidden","fixed")
     }

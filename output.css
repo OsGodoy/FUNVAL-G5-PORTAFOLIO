@@ -12,6 +12,7 @@
     --color-orange-400: oklch(75% 0.183 55.934);
     --color-amber-200: oklch(92.4% 0.12 95.746);
     --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-green-400: oklch(79.2% 0.209 151.711);
     --color-emerald-50: oklch(97.9% 0.021 166.113);
@@ -63,6 +64,8 @@
     --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-medium: 500;
@@ -315,6 +318,9 @@
   .top-\[3\%\] {
     top: 3%;
   }
+  .top-\[4\%\] {
+    top: 4%;
+  }
   .-right-0 {
     right: calc(var(--spacing) * -0);
   }
@@ -357,8 +363,14 @@
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
   }
+  .bottom-8 {
+    bottom: calc(var(--spacing) * 8);
+  }
   .bottom-10 {
     bottom: calc(var(--spacing) * 10);
+  }
+  .bottom-20 {
+    bottom: calc(var(--spacing) * 20);
   }
   .bottom-40 {
     bottom: calc(var(--spacing) * 40);
@@ -616,6 +628,9 @@
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
+  .w-\[\%\] {
+    width: %;
+  }
   .w-\[0\%\] {
     width: 0%;
   }
@@ -640,8 +655,23 @@
   .w-\[75\%\] {
     width: 75%;
   }
+  .w-\[86\%\] {
+    width: 86%;
+  }
   .w-\[90\%\] {
     width: 90%;
+  }
+  .w-\[90\&\] {
+    width: 90&;
+  }
+  .w-\[90\] {
+    width: 90;
+  }
+  .w-\[92\%\] {
+    width: 92%;
+  }
+  .w-\[94\%\] {
+    width: 94%;
   }
   .w-\[95\%\] {
     width: 95%;
@@ -788,6 +818,18 @@
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
+  }
+  .gap-60 {
+    gap: calc(var(--spacing) * 60);
+  }
+  .gap-80 {
+    gap: calc(var(--spacing) * 80);
+  }
+  .gap-90 {
+    gap: calc(var(--spacing) * 90);
+  }
+  .gap-100 {
+    gap: calc(var(--spacing) * 100);
   }
   .overflow-y-auto {
     overflow-y: auto;
@@ -1285,6 +1327,38 @@
       left: 3%;
     }
   }
+  .sm\:hidden {
+    @media (width >= 40rem) {
+      display: none;
+    }
+  }
+  .sm\:size-5 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 5);
+      height: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:size-10 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 10);
+      height: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:h-10 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:h-20 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:h-50 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 50);
+    }
+  }
   .sm\:w-75 {
     @media (width >= 40rem) {
       width: calc(var(--spacing) * 75);
@@ -1305,6 +1379,11 @@
       width: 40%;
     }
   }
+  .sm\:w-\[60\%\] {
+    @media (width >= 40rem) {
+      width: 60%;
+    }
+  }
   .sm\:w-\[95\%\] {
     @media (width >= 40rem) {
       width: 95%;
@@ -1320,9 +1399,20 @@
       gap: calc(var(--spacing) * 2);
     }
   }
+  .sm\:bg-amber-400 {
+    @media (width >= 40rem) {
+      background-color: var(--color-amber-400);
+    }
+  }
   .sm\:bg-\[length\:650px\] {
     @media (width >= 40rem) {
       background-size: 650px;
+    }
+  }
+  .sm\:text-2xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
   .sm\:text-lg {
@@ -1341,6 +1431,33 @@
       display: flex;
     }
   }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
+  .md\:size-6 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 6);
+      height: calc(var(--spacing) * 6);
+    }
+  }
+  .md\:size-8 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 8);
+      height: calc(var(--spacing) * 8);
+    }
+  }
+  .md\:w-\[70\%\] {
+    @media (width >= 48rem) {
+      width: 70%;
+    }
+  }
+  .md\:w-\[70\] {
+    @media (width >= 48rem) {
+      width: 70;
+    }
+  }
   .md\:justify-end {
     @media (width >= 48rem) {
       justify-content: flex-end;
@@ -1350,6 +1467,11 @@
     @media (width >= 48rem) {
       border-style: var(--tw-border-style);
       border-width: 0px;
+    }
+  }
+  .md\:bg-amber-400 {
+    @media (width >= 48rem) {
+      background-color: var(--color-amber-400);
     }
   }
   .md\:bg-\[url\(img\/fondoimgojito-01\.png\)\] {
@@ -1365,6 +1487,18 @@
   .md\:bg-\[length\:400px\] {
     @media (width >= 48rem) {
       background-size: 400px;
+    }
+  }
+  .md\:text-2xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .md\:text-3xl {
+    @media (width >= 48rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .md\:text-sm {
