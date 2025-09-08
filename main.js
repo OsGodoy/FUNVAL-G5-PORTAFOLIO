@@ -65,6 +65,16 @@ let toggleFx = document.querySelector(".toggleFx")
 let windowToggle = document.querySelector("#windowToggle")
 let cerrarToggle = document.querySelector("#cerrarToggle")
 
+let papa = document.querySelector("#papa")
+
+papa.addEventListener("click",function(){
+    if (event.target.classList.contains("flex")){
+        windowToggle.classList.toggle("translate-x-full")
+        toggle.classList.replace("hidden","fixed")
+        toggleFx.classList.replace("hidden","fixed")
+    }
+})
+
 toggle.addEventListener("click",function(){
     if(toggle.classList.contains("fixed")){
         toggle.classList.replace("fixed","hidden")
@@ -162,3 +172,23 @@ redes.addEventListener("click",function(){
         abrir.classList.replace("absolute","hidden")
     }
 })
+
+
+// QUIEN SOY MOBILE
+
+let whoMoreMobile = document.querySelector("#whoMoreMobile")
+let abrirMoreMobile = document.querySelector("#abrirMoreMobile")
+let cerrarWhoMoreMobile = document.querySelector("#cerrarWhoMoreMobile")
+
+abrirMoreMobile.addEventListener("click",function(){
+    if(whoMoreMobile.classList.contains("hidden")){
+        whoMoreMobile.classList.replace("hidden","fixed")
+    }
+})
+
+cerrarWhoMoreMobile.addEventListener("click",function(){
+    if(whoMoreMobile.classList.contains("fixed")){
+        whoMoreMobile.classList.replace("fixed","hidden")
+        abrirMoreMobile.classList.replace("hidden","absolute")
+    }
+}) 
