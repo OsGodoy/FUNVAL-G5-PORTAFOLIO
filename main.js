@@ -191,4 +191,24 @@ cerrarWhoMoreMobile.addEventListener("click",function(){
         whoMoreMobile.classList.replace("fixed","hidden")
         abrirMoreMobile.classList.replace("hidden","absolute")
     }
-}) 
+})
+
+
+// HABILIDADES MOBILE
+
+let skillsMoreMobile = document.querySelector("#skillsMoreMobile")
+let abrirMoreSkills = document.querySelector("#abrirMoreSkills")
+let cerrarSkillsMoreMobile = document.querySelector("#cerrarSkillsMoreMobile")
+
+abrirMoreSkills.addEventListener("click",function(){
+    if(skillsMoreMobile.classList.contains("hidden")){
+        skillsMoreMobile.classList.replace("hidden","fixed")
+    }
+})
+
+cerrarSkillsMoreMobile.addEventListener("click",function(){
+    if(skillsMoreMobile.classList.contains("fixed")){
+        skillsMoreMobile.classList.replace("fixed","hidden")
+        abrirMoreSkills.classList.replace("hidden","absolute")
+    }
+})
