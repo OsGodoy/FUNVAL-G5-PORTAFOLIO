@@ -58,6 +58,26 @@ cerrar.addEventListener("click",function(){
 })
 
 
+// TOGGLE MOBILE --------------------------------------------------------------
+
+let toggle = document.querySelector(".toggle")
+let windoToggle = document.querySelector("#windoToggle")
+
+toggle.addEventListener("click",function(){
+    if(toggle.classList.contains("fixed")){
+        toggle.classList.replace("fixed","hidden")
+        windoToggle.classList.toggle("translate-x-full")
+    }
+})
+
+cerrar.addEventListener("click",function(){
+    if(windoToggle.classList.contains("flex")){
+        windoToggle.classList.toggle("translate-x-full")
+        toggle.classList.replace("hidden","fixed")
+    }
+})
+
+
 // QUIEN SOY? --------------------------------------------------------------
 
 let who = document.querySelector("#who")
