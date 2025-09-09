@@ -67,7 +67,7 @@ let cerrarToggle = document.querySelector("#cerrarToggle")
 
 let papa = document.querySelector("#papa")
 
-papa.addEventListener("click",function(){
+papa.addEventListener("click",function(event){
     if (event.target.classList.contains("flex")){
         windowToggle.classList.toggle("translate-x-full")
         toggle.classList.replace("hidden","fixed")
